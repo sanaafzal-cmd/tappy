@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tappy – Smart POS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Header -->
+  <header class="header">
+  <div class="container header-inner">
+    <div class="logo">Tappy</div>
+
+    <!-- Hamburger Icon -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav" id="navMenu">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Features</a>
+      <a href="#" class="nav-link">FAQs</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 class="hero-heading">Tappy – Smart payments & POS in one powerful app.</h1>
+        <p class="hero-subheading">
+          Simplify sales, tips, receipts, and taxes — all from your Android device. No extra hardware, no complications.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Try Tappy Now</a>
+          <a href="#" class="watch-video">▶ Watch Video</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/Hero_Section_img.png" alt="App Preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Intro Section -->
+  <section class="feature-intro">
+    <div class="container">
+      <h2 class="feature-heading">The modern POS built for mobility and speed.</h2>
+      <p class="feature-text">
+        Designed for food trucks, pop-ups, and solo professionals, Tappy transforms your Android device into a complete POS solution. Accept tap-to-pay, manage products, track tips, send receipts — all with a sleek, mobile-first experience.
+      </p>
+      <a href="#" class="btn-primary">Download on Google Play</a>
+      <p class="coming-soon">Coming soon for iOS</p>
+    </div>
+  </section>
+
+  <!-- Features Icons Section -->
+<section class="feature-icons">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item">
+        <img src="assets/Icons/Feature_1.png" alt="Tap on Mobile Icon" class="feature-icon">
+        <h3 class="feature-title">Tap-on-Mobile Payments</h3>
+        <p class="feature-desc">Accept contactless payments — no card reader required.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/Icons/Feature_2.png" alt="Barcode Scanner Icon" class="feature-icon">
+        <h3 class="feature-title">Custom Categories & Barcode Scanning</h3>
+        <p class="feature-desc">Organize products with photos and scan barcodes using your device camera.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/Icons/Feature_3.png" alt="Cloud Sync Icon" class="feature-icon">
+        <h3 class="feature-title">Cloud Sync Across Devices</h3>
+        <p class="feature-desc">Work across multiple devices with real-time data syncing.</p>
+      </div>
+    </div>
+
+    <div class="feature-phone">
+      <img src="assets/images/Features_Section_img.png" alt="Tappy Sync Screen" class="phone-image">
+    </div>
+  </div>
+</section>
+
+<!-- Beautiful Interface Section -->
+<section class="interface-section">
+  <div class="container">
+    
+    <!-- Centered Heading + Subheading -->
+    <div class="interface-header">
+      <h2 class="interface-heading">Sell smarter with a beautiful, intuitive interface.</h2>
+      <p class="interface-subheading">
+        Tappy makes checkout fast and friendly with visual layouts, personalized categories, and paperless receipts. Whether it’s one-on-one services or retail sales, it feels seamless for both you and your customers.
+      </p>
+    </div>
+
+    <!-- 2-Column Content -->
+    <div class="interface-grid">
+      <!-- Left: Features -->
+      <div class="interface-features">
+        <div class="feature-block">
+          <h4>Instant Digital Receipts</h4>
+          <p>Send via QR or NFC — no printing needed.</p>
+        </div>
+        <div class="feature-block">
+          <h4>Customer Management</h4>
+          <p>Build a customer list and send receipts by email.</p>
+        </div>
+        <div class="feature-block">
+          <h4>Inventory Control</h4>
+          <p>Create and manage your catalog with VAT, pricing, and descriptions.</p>
+        </div>
+      </div>
+
+      <!-- Right: Mockup Image -->
+      <div class="interface-image">
+        <img src="assets/images/Interface_Section_img.png" alt="Tappy Mobile UI" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const toggleBtn = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('nav-open');
+  });
+</script>
+
+
+
+</body>
+</html>
