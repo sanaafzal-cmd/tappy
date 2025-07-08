@@ -288,7 +288,7 @@ a {
 
 /* Interface Section */
 .interface-section {
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
   background-color: #fff;
 }
 
@@ -368,5 +368,94 @@ a {
     text-align: center;
   }
 }
+
+/* Video Section */
+.video-section {
+  padding: 6rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.video-heading {
+  font-size: 2.5rem; /* ~40px */
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.video-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* Smart POS */
+.smart-pos {
+  padding: 6rem 1rem;
+  background-color: #fff;
+}
+
+.smart-pos-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem;
+}
+
+.smart-pos-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.smart-pos-heading {
+  font-size: 3rem; /* 48px */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.smart-pos-subheading {
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.smart-pos-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .smart-pos-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .smart-pos-text {
+    text-align: left;
+    flex: 1;
+  }
+
+  .smart-pos-image {
+    flex: 1;
+    text-align: right;
+  }
+ 
+}
+
+
+
 
 
