@@ -658,19 +658,22 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   position: relative;
 }
 
-/* .feature-steps-row.reverse {
+ .feature-steps-row.reverse {
   flex-direction: row-reverse;
+} 
+
+/* .feature-steps-image{
+  align-self:flex-end;
 } */
 
 .feature-steps-image img {
-  height: 400px;
+  height: 300px;
   width: auto;
   display: block;
-  border-radius: 0.75rem;
 }
 
 .feature-steps-text {
@@ -698,7 +701,7 @@ a {
   font-size: 1.125rem;
   font-weight: 400;
   color: #EF4444;
-  letter-spacing: 0.56rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-decoration: none;
 }
