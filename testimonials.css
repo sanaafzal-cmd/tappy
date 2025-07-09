@@ -1,0 +1,125 @@
+.testimonial-section{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.carousel-container {
+      position: relative;
+      width: 1280px;
+      height: 620px;
+      border-radius: 30px;
+      overflow: hidden;
+      /* background: linear-gradient(0deg, rgba(88, 28, 135, 0.55) 0%, rgba(88, 28, 135, 0.55) 100%), 
+        url('assets/images/business_img.png') no-repeat center center; */
+        background-image: 
+    linear-gradient(to right, #312E81 0%, #1E40AF 0%, #1E3A8A 47%, #701A75 100%),
+    url('assets/images/business_img.png');
+        background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+      background-size: cover;
+      color: white;
+       padding: 40px; 
+      
+      
+    }
+
+    .carousel-header {
+      padding-top: 5rem;
+      font-size: 56px;
+      font-weight: 600 !important;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.1;
+    }
+
+    .testimonial-text {
+      font-size: 20px;
+      font-weight: 100;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .user-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .user-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-name {
+      font-size: 18px;
+      font-weight: 200;
+    }
+
+    .user-role {
+      font-size: 16px;
+      opacity: 0.9;
+      font-weight: 100;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    .arrow.left {
+      left: 30px;
+    }
+
+    .arrow.right {
+      right: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-container {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .carousel-header {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+      }
+
+      .arrow {
+        width: 45px;
+        height: 45px;
+      }
+    }

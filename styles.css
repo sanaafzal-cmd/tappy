@@ -691,6 +691,7 @@ a {
   font-weight: 600;
   margin-bottom: 1rem;
   color: #111827;
+  line-height: 1.2;
 }
 
 .feature-steps-text p {
@@ -719,6 +720,10 @@ a {
   left: -16.5%;
   transform: translateX(-50%);
   top: 0;
+}
+
+.reverse .feature-steps-text h3:nth-child(even){
+text-align: right;
 }
 
 /* Responsive Layout */
