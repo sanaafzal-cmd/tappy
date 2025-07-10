@@ -144,23 +144,32 @@ a {
 }
 
 }
-
+.hero {
+  background-color: var(--color-light);
+  padding: 4rem 0;
+}
 
 /* Hero */
-.hero {
+.hero-1 {
   background-color: var(--color-light);
   padding: 0;
   video {
-    max-width: 100%;
-    height: 100%;
+    width: auto !important;
+    min-height: 100% !important;
   }
 }
-
 .hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-content-1 {
 overflow: hidden;
   position: relative;
 }
-.hero-text {
+.hero-text-1 {
   position: absolute;
     top: 33%;
     left: 50%;
@@ -177,8 +186,11 @@ left: 0;
   height: 100%;
   width: 100%;
 }
+.hero-text{
+  flex: 1;
+}
 
-.hero-heading {
+.hero-heading-1 {
   font-size: 4.5rem; /* 72px */
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -186,15 +198,30 @@ left: 0;
   color: white;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-    .hero-heading{
-        font-size: 3.5rem;
-    }
+.hero-heading {
+  font-size: 4.5rem; /* 72px */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.1; /* This reduces vertical space between lines */
+  color: var(--color-dark);
 
 }
+@media (max-width: 768px) {
+  .hero-text-1 {
+    width: 100% !important;
+  }
+    .hero-heading-1{
+        font-size: 3.5rem;
+    }
+.hero-subheading-1{
+   max-width: 20rem !important;
+}
+.hero-text-1{
+  left: 46% !important;
+}
+}
 
-.hero-subheading {
+.hero-subheading-1 {
   font-size: 1.125rem; /* 18px */
   font-weight: 400;
   margin-bottom: 2rem;
@@ -202,6 +229,15 @@ left: 0;
   color: white;
     text-align: center;
 }
+.hero-subheading {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  color: var(--color-dark);
+ 
+}
+
 
 .hero-buttons {
   display: flex;
@@ -279,9 +315,12 @@ left: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+ 
   }
+  
 
-  .hero-text {
+  .hero-text-1 {
     flex: 1;
   }
 
@@ -290,6 +329,7 @@ left: 0;
     text-align: right;
   }
 }
+
 
 /* Features Section */
 /* Feature Icons Section */
