@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tappy – Smart POS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Header -->
+  <header class="header">
+  <div class="container header-inner">
+    <div class="logo"><img src="assets/Icons/Tappy_Logo-removebg-preview.png"></div>
+
+    <!-- Hamburger Icon -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="faqs.html" class="nav-link active">FAQs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="faq-carousel-section">
+  <div class="faq-header">
+    <div>
+      <h2>Frequently asked Questions</h2>
+      <p>Everything you need to know about Tappy — setup, payments, features, and more.</p>
+    </div>
+    <div class="faq-arrow-container">
+      <button class="faq-arrow" id="faq-prev">&#8592;</button>
+      <button class="faq-arrow active" id="faq-next">&#8594;</button>
+    </div>
+  </div>
+
+  <div class="faq-carousel-container">
+    <div class="faq-carousel" id="faq-carousel">
+      <div class="faq-card dark">
+        <h3>What is Tappy?</h3>
+        <p>
+          Tappy is a smart, mobile-first POS (Point of Sale) app that enables small businesses to accept tap-on-mobile payments, manage products, send digital receipts, and track sales — all from an Android phone. No additional hardware is needed.
+        </p>
+      </div>
+      <div class="faq-card light">
+        <h3>Which devices are compatible with Tappy?</h3>
+        <p>
+          Tappy works on most modern Android smartphones that support NFC and run Android 8.0 or higher. iOS support is in development.
+        </p>
+      </div>
+      <div class="faq-card dark">
+        <h3>Does Tappy require any external hardware?</h3>
+        <p>
+          No. Tappy is fully functional as a standalone app on supported Android devices. You don’t need any external card readers or printers.
+        </p>
+      </div>
+
+       <div class="faq-card light">
+        <h3>What types of payments can I accept with Tappy?</h3>
+        <p>
+          You can accept contactless payments including credit/debit cards (Visa, Mastercard), mobile wallets (Google Pay, Apple Pay*), and NFC-enabled payment devices.
+        </p>
+      </div>
+
+      <div class="faq-card dark">
+        <h3>Is Tappy secure?</h3>
+        <p>
+         Yes. Tappy uses encrypted, PCI-DSS compliant systems to process all payment data. Your customer’s card information is never stored on your device.
+        </p>
+      </div>
+
+      <div class="faq-card light">
+        <h3>Can I use Tappy offline?</h3>
+        <p>
+          Yes. Tappy works offline for product selection, customer management, and receipt generation. However, contactless payments require an internet connection. Any changes made offline will sync automatically once you're back online.
+        </p>
+      </div>
+
+       <div class="faq-card dark">
+        <h3>How do digital receipts work?</h3>
+        <p>
+         After a transaction, customers can receive their receipts by:
+
+Scanning a QR code shown on your screen,
+
+Tapping their phone using NFC,
+
+Receiving it via email if added to their profile
+        </p>
+      </div>
+
+      <div class="faq-card light">
+        <h3>Can I customize my product catalog?</h3>
+        <p>
+          Absolutely! You can add unlimited products, categorize them, upload photos, set prices, and include VAT settings. Barcode scanning is also supported using your device camera.
+        </p>
+      </div>
+
+      <div class="faq-card dark">
+        <h3>Does Tappy support tipping and discounts?</h3>
+        <p>
+         Yes. You can enable tip prompts during checkout and set flexible discounts — either fixed amount or percentage-based — for products, customers, or promotions.
+        </p>
+      </div>
+
+      <div class="faq-card light">
+        <h3>Can multiple team members use the same Tappy account?</h3>
+        <p>
+          Yes. You can link multiple Android devices to the same account. All sales data syncs in real time, so everyone stays up to date.
+        </p>
+      </div>
+
+      <div class="faq-card dark">
+        <h3>How do I access my sales reports?</h3>
+        <p>
+         Tappy provides an in-app dashboard with real-time analytics. You can also export all transaction data in CSV, Excel, or JSON formats for accounting or bookkeeping purposes.
+        </p>
+      </div>
+
+       <div class="faq-card light">
+        <h3>Is there a monthly subscription fee?</h3>
+        <p>
+          No. Tappy is free to download and use. Standard payment processing fees (set by your merchant service provider) may apply.
+        </p>
+      </div>
+
+      <div class="faq-card dark">
+        <h3>Can I export data for accounting software?</h3>
+        <p>
+         Yes. You can export sales data in various formats that are compatible with most accounting tools like QuickBooks, Xero, or Excel-based sheets.
+        </p>
+      </div>
+
+      <div class="faq-card light">
+        <h3>How do I get started with Tappy?</h3>
+        <p>
+          Simply:
+
+Download the app from the Google Play Store,
+
+Set up your products and business info,
+
+Connect a supported merchant account (if required in your region),
+
+Start accepting payments!
+
+
+        </p>
+      </div>
+
+      <div class="faq-card dark">
+        <h3> I need help. How do I contact support?</h3>
+        <p>
+         You can reach us at support@tappyapp.io or through the in-app support chat. Our team typically responds within 24 hours.
+        </p>
+      </div>
+
+      <div class="faq-card light">
+        <h3>Is Tappy available in my country?</h3>
+        <p>
+          Tappy is currently available in select regions. We're expanding quickly — contact us to check availability in your country or request early access.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2 class="cta-heading">Everything you need to run your business — in one powerful app.</h2>
+    <p class="cta-subheading">Tappy replaces bulky POS hardware and messy processes with a streamlined, mobile-first platform built for today’s entrepreneurs.</p>
+    <a href="#" class="btn-primary">Download App</a>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-content">
+    
+    <!-- Left -->
+    <div class="footer-left">
+      Tappy © 2025. All rights reserved.
+    </div>
+    
+    <!-- Right -->
+    <div class="footer-right">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+      <a href="#">Contact</a>
+    </div>
+    
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
