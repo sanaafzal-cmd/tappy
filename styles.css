@@ -42,15 +42,46 @@ a {
   position: relative;
   z-index: 1000;
 }
+.fade-in {
+  animation: fadeIn 0.3s ease-in forwards;
+}
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 92.50px;
 }
-
+.logo {
+  height: 64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 .logo img {
-  width: 20px;
+  width: 64px;
 }
 
 .nav {
@@ -118,14 +149,33 @@ a {
 /* Hero */
 .hero {
   background-color: var(--color-light);
-  padding: 4rem 0;
+  padding: 0;
+  video {
+    max-width: 100%;
+    height: 100%;
+  }
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 3rem;
+overflow: hidden;
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-45%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.overlay {
+position: absolute;
+top: -6px;
+left: 0;
+  background: rgba(0,0,0,0.3);
+  height: 100%;
+  width: 100%;
 }
 
 .hero-heading {
@@ -133,6 +183,8 @@ a {
   font-weight: 600;
   margin-bottom: 1.5rem;
   line-height: 1.1; /* This reduces vertical space between lines */
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -147,7 +199,8 @@ a {
   font-weight: 400;
   margin-bottom: 2rem;
   max-width: 40rem;
-  color: var(--color-text);
+  color: white;
+    text-align: center;
 }
 
 .hero-buttons {
@@ -168,7 +221,7 @@ a {
 .watch-video {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: white;
   display: flex;
   align-items: center;
 }
@@ -185,6 +238,22 @@ a {
   padding: 4rem 1rem;
 }
 
+.feature-step-item {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+    margin-right: 130px;
+}
+.feature-step-item2 {
+    display: flex;
+  justify-content: start;
+  width: 100%;
+    margin-left: 130px;
+}
+.feature-step-btn {
+  display: flex;
+  justify-content: end;
+}
 .feature-heading {
   font-size: 3.5rem; /* 56px */
   font-weight: 600;
@@ -717,9 +786,17 @@ a {
   background-color: var(--color-green);
   border-radius: 50%;
   position: absolute;
-  left: -16.5%;
+  left: -16.3%;
   transform: translateX(-50%);
   top: 0;
+}
+
+.feature-steps-dot2{
+  left: 114.2%;
+    transform: translateX(100%);
+}
+.feature-steps-dot3 {
+ left: 20.4%;
 }
 
 .reverse .feature-steps-text h3:nth-child(even){
